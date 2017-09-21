@@ -1,0 +1,76 @@
+<html ng-app="scout24UiApp">
+<div>
+  <h1>Scout24 HTML Analyser</h1>
+  <p class="lead">
+    <img src="images/scout24.png"><br>
+  </p>
+  <h3>Enter URL and Check analysis</h3>
+</div>
+
+<form class="form-inline" role="form" style="margin-bottom :25px;">
+  <div class="form-group">
+    <label class="form-control-label">Input Url</label>
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="uri" style="width: 632px;">
+      <span class="input-group-btn">
+				<button type="button" class="btn btn-default"
+                ng-click="submit(uri)">Submit</button>
+			</span>
+    </div>
+  </div>
+</form>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="table-responsive">
+      <table id="urlContentTable"
+             class="table table-striped table-hover table-condensed table-bordered">
+        <thead>
+        <tr>
+          <th class="tableCentered">Html Version</th>
+          <th class="tableCentered">Title</th>
+          <th class="tableCentered">Headings</th>
+          <th class="tableCentered">Internal Links</th>
+          <th class="tableCentered">External Links</th>
+          <th class="tableCentered">Login Form</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>{{webDocument.htmlVersion}}</td>
+          <td>{{webDocument.title}}</td>
+          <td>{{webDocument.headingTagMap}}</td>
+          <td>{{webDocument.numOfInternalLinks}}</td>
+          <td>{{webDocument.numOfExternalLinks}}</td>
+          <td>{{webDocument.hasLoginForm}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="table-responsive">
+      <table id="hyperLinksTable"
+             class="table table-striped table-hover table-condensed table-bordered">
+        <thead>
+        <tr>
+          <th class="tableCentered">Link</th>
+          <th class="tableCentered">Return Http Code</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="(key, value) in webDocument.linkResourceValidationMap">
+
+          <td>{{key}}</td>
+
+          <td>{{value}}</td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</html>

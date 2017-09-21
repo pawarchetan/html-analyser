@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta id="bb-bootstrap" data-current-user="{&quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;isAuthenticated&quot;: false}"
+    />
+    <script src="//cdn.optimizely.com/js/1096093.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bitbucket is a Git and Mercurial based source code management and collaboration solution in the cloud. Bitbucket is simple and powerful, enables code collaboration for teams, works with the tools that matter, and is easy to use even for teams new to Git and Mercurial">
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+
+
+
+    <meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+    <meta name="bb-api-canon-url" content="https://api.bitbucket.org">
+
+
+    <meta name="bb-commit-hash" content="4373ea877c7d">
+    <meta name="bb-app-node" content="app-167">
+    <meta name="bb-view-name" content="bitbucket.apps.account.views.bb_login">
+    <meta name="ignore-whitespace" content="False">
+    <meta name="tab-size" content="None">
+    <meta name="locale" content="en">
+
+    <meta name="application-name" content="Bitbucket">
+    <meta name="apple-mobile-web-app-title" content="Bitbucket">
+
+
+
+    <meta name="theme-color" content="#0049B0">
+    <meta name="msapplication-TileColor" content="#0052CC">
+    <meta name="msapplication-TileImage" content="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/img/logos/bitbucket/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/img/logos/bitbucket/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" type="image/png" href="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/img/logos/bitbucket/android-chrome-192x192.png">
+    <link rel="icon" sizes="16x16 24x24 32x32 64x64" type="image/x-icon" href="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/img/logos/bitbucket/favicon_2017.ico">
+    <link rel="mask-icon" href="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/img/logos/bitbucket/safari-pinned-tab.svg" color="#0052CC">
+
+
+
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket">
+
+    <meta name="description" content=""/>
+
+    <title>Bitbucket</title>
+
+    <link rel="stylesheet" href="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/css/entry/vendor.css" />
+
+    <link rel="stylesheet" href="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/css/entry/atlassian-id-login.css" />
+
+</head>
+
+<body
+        class="aid-login aui-page-focused aui-page-focused-xsmall aui-page-size-xsmall"
+        id="atlassian-id-login">
+
+<header id="aui-message-bar">
+
+</header>
+<header class="microbranding  has-2017-logos ">
+
+    <h1 class="microbranding--atlassian-logo">Log in to continue</h1>
+
+    <a class="microbranding--bitbucket-logo" href="/">Bitbucket</a>
+</header>
+<header id="aui-message-bar"></header>
+
+<section class="content atlassian-id--content" role="main">
+
+    <section data-module="atlassian-id/login">
+        <section id="login-form" class="hidden">
+
+
+            <section class="aui-page-panel-inner">
+
+                <div class="google-login" data-i18n-or="or">
+
+
+
+                    <form class="connect-button" name="login"
+                          data-module="registration/connect-account-button"
+                          method="POST" action="/socialauth/login/google-oauth2/">
+                        <input type='hidden' name='csrfmiddlewaretoken' value='O6tt0ozF8FY9cIG3y1fZ7dbwqQWz6l4j' />
+                        <input type="hidden" name="next" value="">
+                        <button type="submit" class="aui-button google-button login-with-google">
+                            <span class="connect-button--label">Log in with Google</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="or">
+                    or
+                </div>
+
+                <form
+                        action=""
+                        class="aui aid-form errors-below-inputs"
+                        data-errors=""
+                        id="aid-login-form"
+                        method="post">
+
+                    <div id="js-global-login-error-container" class="aui-message aui-message-error hidden">
+                    </div>
+
+                    <input type="hidden" name="next" value="">
+                    <input
+                            name="csrfmiddlewaretoken"
+                            type="hidden"
+                            value="O6tt0ozF8FY9cIG3y1fZ7dbwqQWz6l4j" />
+
+
+
+
+
+
+
+                    <section class="text-inputs">
+                        <input
+                                autofocus
+                                class="override-aui text"
+                                id="js-email-field"
+                                name="username"
+                                maxlength=255
+                                placeholder="Email"
+                                type="text"
+                                value="" />
+                        <input
+
+                                class="override-aui text"
+                                id="js-password-field"
+                                name="password"
+                                placeholder="Password"
+                                type="password" />
+                    </section>
+
+                    <div class="button-container submit-container">
+                        <input
+                                type="submit"
+                                class="large-blue-button selenium-login-submit aui-button-primary"
+                                value="Log in" />
+                        <a class="reset-password" href="/account/password/reset/">
+                            Forgot your password?
+                        </a>
+                    </div>
+
+
+                    <div class="button-container">
+
+                        <div class="signup-link">
+
+                            Need an account?
+                            <a href="/account/signup/" id="signup">Sign up</a>.
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </section>
+
+            <div class="aui-page-panel-inner deprecated-auths">
+                <p>
+
+                    <a class="js-change-page-state"
+                       data-to-state="SOCIAL_AUTH"
+                       href="#social-auth">
+                        Looking for GitHub, Facebook, or Twitter log in?
+                    </a>
+
+                </p>
+            </div>
+
+        </section>
+        <section id="social-auth" class="hidden">
+
+
+            <div class="aui-message aui-message-warning social-auth-deprecation-msg">
+                <p>
+
+                    We're in the process of phasing out these options.<br />
+                    It's recommended that you log in <a class="js-change-page-state" data-to-state="LOGIN_FORM" href="#login-form">using email or Google</a>.
+
+                </p>
+            </div>
+
+            <section class="social-logins">
+
+
+
+                <form class="connect-button" name="login"
+                      data-module="registration/connect-account-button"
+                      method="POST" action="/social/facebook/redirect/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='O6tt0ozF8FY9cIG3y1fZ7dbwqQWz6l4j' />
+                    <input type="hidden" name="next" value="">
+                    <button type="submit" class="aui-button facebook-button">
+                        <span class="connect-button--label">Facebook</span>
+                    </button>
+                </form>
+
+
+
+                <form class="connect-button" name="login"
+                      data-module="registration/connect-account-button"
+                      method="POST" action="/social/twitter/redirect/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='O6tt0ozF8FY9cIG3y1fZ7dbwqQWz6l4j' />
+                    <input type="hidden" name="next" value="">
+                    <button type="submit" class="aui-button twitter-button">
+                        <span class="connect-button--label">Twitter</span>
+                    </button>
+                </form>
+
+
+
+                <form class="connect-button" name="login"
+                      data-module="registration/connect-account-button"
+                      method="POST" action="/social/github/redirect/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='O6tt0ozF8FY9cIG3y1fZ7dbwqQWz6l4j' />
+                    <input type="hidden" name="next" value="">
+                    <button type="submit" class="aui-button github-button">
+                        <span class="connect-button--label">Github</span>
+                    </button>
+                </form>
+            </section>
+
+            <section class="atlassian-id-openid-container">
+
+
+                <form id="openid-form" class="aui login-form"
+                      data-module="registration/openid-form"
+                      action="/social/openid/redirect/" method="POST">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='O6tt0ozF8FY9cIG3y1fZ7dbwqQWz6l4j' />
+
+
+                    <div class="field-group">
+                        <label class="openid-label">OpenID providers</label>
+                        <ul class="openid-providers">
+                            <li><a href="#yahoo" data-url="http://yahoo.com/" title="Yahoo!">Yahoo!</a></li>
+                            <li><a href="#aol" title="AOL" data-url="http://openid.aol.com/{id}"
+
+                            >AOL</a></li>
+                            <li><a href="#openid" title="OpenID" data-url="{id}"
+
+                            >OpenID</a></li>
+                            <li><a href="#myopenid" title="MyOpenID" data-url="http://{id}.myopenid.com/"
+
+                            >MyOpenID</a></li>
+                            <li><a href="#livejournal" title="LiveJournal" data-url="http://{id}.livejournal.com/"
+
+                            >LiveJournal</a></li>
+                            <li><a href="#flickr" title="Flickr" data-url="http://flickr.com/{id}/"
+
+                            >Flickr</a></li>
+                            <li><a href="#wordpress" title="WordPress" data-url="http://{id}.wordpress.com/"
+
+                            >WordPress</a></li>
+                            <li><a href="#verisign" title="VeriSign" data-url="http://{id}.pip.verisignlabs.com/"
+
+                            >VeriSign</a></li>
+                            <li><a href="#claimid" title="ClaimID" data-url="http://claimid.com/{id}"
+
+                            >ClaimID</a></li>
+                        </ul>
+                    </div>
+                    <div class="field-group provider" id="aol">
+                        <label for="aol-username">Username</label>
+                        <input type="text" class="text" id="aol-username" name="aol-username">
+                    </div>
+                    <div class="field-group provider" id="openid">
+                        <label for="openid-url">OpenID URL</label>
+                        <input type="url" class="text" id="openid-url" name="openid-url">
+                    </div>
+                    <div class="field-group provider" id="myopenid">
+                        <label for="myopenid-username">Username</label>
+                        <input type="text" class="text" id="myopenid-username" name="myopenid-username">
+                    </div>
+                    <div class="field-group provider" id="livejournal">
+                        <label for="livejournal-username">Username</label>
+                        <input type="text" class="text" id="livejournal-username" name="livejournal-username">
+                    </div>
+                    <div class="field-group provider" id="flickr">
+                        <label for="flickr-username">Username</label>
+                        <input type="text" class="text" id="flickr-username" name="flickr-username">
+                    </div>
+                    <div class="field-group provider" id="wordpress">
+                        <label for="wordpress-username">Username</label>
+                        <input type="text" class="text" id="wordpress-username" name="wordpress-username">
+                    </div>
+                    <div class="field-group provider" id="verisign">
+                        <label for="verisign-username">Username</label>
+                        <input type="text" class="text" id="verisign-username" name="verisign-username">
+                    </div>
+                    <div class="field-group provider" id="claimid">
+                        <label for="claimid-username">Username</label>
+                        <input type="text" class="text" id="claimid-username" name="claimid-username">
+                    </div>
+                    <div class="buttons-container">
+                        <div class="buttons">
+                            <input type="hidden" id="openid_provider" name="openid_provider">
+                            <input type="hidden" id="openid_username" name="openid_username">
+                            <button type="submit" class="aui-button aui-button-primary">
+                                Log in
+                            </button>
+                        </div>
+
+                        <p class="signup-copy">
+                            <a href="/account/signup/">Need an account? Sign up free.</a>
+                        </p>
+
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <script nonce="7xEC1jicFvu1wzfV">
+      if (location.hash === '#social\u002Dauth') {
+        document.getElementById('social-auth').className = '';
+      } else {
+        document.getElementById('login-form').className = '';
+      }
+    </script>
+    </section>
+
+</section>
+
+<footer id="footer" class="atlassian-id--footer" role="contentinfo">
+
+    <ul>
+        <li class="atlassian-id--footer-link">
+            <a target="_blank" href="https://www.atlassian.com/legal/customer-agreement">Terms of Use</a>
+        </li>
+        <li class="atlassian-id--footer-link">
+            <a target="_blank" href="https://support.atlassian.com">Support</a>
+        </li>
+        <li class="atlassian-id--footer-link">
+            <a target="_blank" href="https://www.atlassian.com/legal/privacy-policy">Privacy Policy</a>
+        </li>
+    </ul>
+
+</footer>
+
+
+
+
+
+
+<script nonce="7xEC1jicFvu1wzfV">
+  window.__initial_state__ = {"global": {"features": {"pr-merge-sign-off": true, "comment-likes": true, "fast-pr-merges": true, "twofactor-u2f": true, "clone-mirrors": true, "repo-onboarding": true, "require-issue-key": true, "snippets": true, "adg3": true, "fabric-emoji": true, "revert-pull-request": true, "new-dashboard": true, "integrations-page": true, "online-ides": true, "new-signup-flow": true, "fe_word_diff": true, "use-moneybucket": true, "pinned-issue-comments": true, "invitation-matching-email": true, "2017-logos": true, "diff-renames-public": true, "app-passwords": true, "ignore-whitespace-button": true, "trello-boards": true, "squash-merge": true, "pr-shared-component": true, "build-status": true, "code-search-cta": true, "projects": true, "pr-checkout-command": true, "new-features-management": true, "repo-avatar-revival": true, "diff-renames-internal": true, "search-syntax-highlighting": true, "code-search-cta-launch": true, "new-features": true, "promote-bello": true, "search-results-adg3-page": true, "lfs_post_beta": true, "rollout-bello": true, "two-step": true, "bundle-splitting": true}, "locale": "en", "geoip_country": null, "isFocusedTask": false, "path": "/account/signin/", "focusedTaskBackButtonUrl": "https://bitbucket.org/product"}};
+  window.__settings__ = {"SOCIAL_AUTH_ATLASSIANID_LOGOUT_URL": "https://id.atlassian.com/logout", "CANON_URL": "https://bitbucket.org", "API_CANON_URL": "https://api.bitbucket.org"};
+</script>
+
+<script src="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/jsi18n/en/djangojs.js"></script>
+
+<script src="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/dist/webpack/locales/en.js"></script>
+
+<script src="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/dist/webpack/vendor.js"></script>
+<script src="https://d301sr5gafysq2.cloudfront.net/4373ea877c7d/dist/webpack/app.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"a2cef8c3d3","agent":"","transactionName":"Z11RZxdWW0cEVkYLDV4XdUYLVEFdClsdAAtEWkZQDlJBGgRFQhFMUVtQXBBZQRoTXFcVEQpaUWwJWFJdCw==","applicationID":"1841284","errorBeacon":"bam.nr-data.net","applicationTime":16}</script>
+</body>
+</html>
